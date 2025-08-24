@@ -7,5 +7,3 @@ def SelectionSort(nums):
                 minpos=j
         nums[i],nums[minpos]=nums[minpos],nums[i]
     return nums
-nums=[100,99,5,66,8,999,55,44,61]
-print(SelectionSort(nums))

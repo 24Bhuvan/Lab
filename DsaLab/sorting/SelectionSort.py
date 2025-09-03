@@ -1,8 +1,9 @@
 def SelectionSort(nums):
-   
-    for i in range(len(nums)-1):
+    n=len(nums)
+    for i in range(n-1):
         minpos=i
-        for j in range(i,len(nums)):
-            if nums[minpos]>nums[j]:
+        for j in range(i+1,n):
+            if nums[j]<nums[minpos]:
                 minpos=j
         nums[i],nums[minpos]=nums[minpos],nums[i]
+    return nums
